@@ -1,0 +1,33 @@
+
+
+x : Int = 5;
+
+
+
+doubler x : Int -> Int = x * 2;
+# Or:
+doubler x :: Int -> Int
+doubler x = x * 2;
+
+
+
+# Or:
+doubler x :: Int -> Int # Purest form, since closest to how the program actually works. should compile to this first
+doubler x = {
+    i : Int = 2;
+    x * i
+};
+
+# Alternative one line syntax:
+doubler x : Int -> Int = {
+	i = 2;
+	x * i
+};
+
+# or even
+doubler x : Int -> Int = { i = 2; x * i };
+
+
+# How a machine looks to the compiler when whitespace has been removed:
+
+doubler x : Int -> Int = { i = 2; x * i };

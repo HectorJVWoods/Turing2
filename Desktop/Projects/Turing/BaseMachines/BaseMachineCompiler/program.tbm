@@ -1,0 +1,5 @@
+(OneTape : 5) # One tape turing machine
+[AND][0][0]
+[XOR][1][4]
+[(0,0,0,0)][0][1]
+(END)

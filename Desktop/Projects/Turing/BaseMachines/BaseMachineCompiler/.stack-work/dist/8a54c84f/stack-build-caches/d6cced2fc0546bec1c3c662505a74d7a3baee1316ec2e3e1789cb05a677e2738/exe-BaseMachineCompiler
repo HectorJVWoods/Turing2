@@ -1,0 +1,24 @@
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\BaseMachineCompiler.cabal:
+  hash: 69e994141ae28fe64a86e0315829ed664cc37c62378ac7f8d40fc639a9b36817
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\CHANGELOG.md:
+  hash: 8a3cab3ed0cbaa382300ece153720dc50ec7bc6d42c05c4fff0b704baf542e33
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\README.md:
+  hash: eb2223a27923cd256fbf73823fe93d2ec6be63a8e57272f3334f061c1214b38f
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\BMIPF.hs:
+  hash: 5419b607fc9b20fb5e4bacc269c9502fc2f09482065b8f78e69f8f2c5d84f36a
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\BaseFunctions.hs:
+  hash: 02bcb2dd1d024b30d753fbd109591269214e4a44eb179a7b86bcd0eca00b8b3e
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\BaseMachines.hs:
+  hash: 8ac1411b52d067e4335bbce020009a90a3a2e70d3bfcfae12e654582a3613e8f
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\GatesFile.hs:
+  hash: 06ed3ae996b8bb792e9a135cc3057d890f597202c1cdab2e94f0739dee463687
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\Helpers.hs:
+  hash: 9b376b3345bf38763eb9356de1fcc5a0260d22bfcf0973d88ac0248b008a10fe
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\LambdaCalculus.hs:
+  hash: b1e283bea26e473c03a3910ecf4db7bfb4b8dc4b487a5eeb9c1fb08e12bb9fbf
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\LambdaCalculusTests.hs:
+  hash: 0a4e81facfabcde731d60aebfebb384bfbbc40250d495e888c1c8aa66172b4c8
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\Main.hs:
+  hash: 6f35ce66a57568b6f6c257006e22ab7758cc4e5fe90ae784d7e97f24aca5fe3f
+C:\Users\hecto\Desktop\Projects\Turing\BaseMachines\BaseMachineCompiler\src\Tape.hs:
+  hash: 1261352b1664d5b48e49682e2d2f6e20a3fc5bacd0afdc44e9802d6887aff610
