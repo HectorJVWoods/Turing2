@@ -1,7 +1,7 @@
 (OneTape : 5) # This is a same line comment, also fine :)
 [AND][0][0]
 [XOR][1][4]
-                 # hi i am a comment, and comments with spaces are also totally valid!!
+                 # hi i am a comment, and comments with spaces are fine
  # Empty lines are A-ok!
 
 

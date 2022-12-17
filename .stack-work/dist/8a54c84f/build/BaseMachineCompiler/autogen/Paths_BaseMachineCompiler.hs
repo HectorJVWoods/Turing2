@@ -42,12 +42,12 @@ getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: 
 
 
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
-bindir     = "C:\\Users\\hecto\\Desktop\\Projects\\Turing\\BaseMachines\\BaseMachineCompiler\\.stack-work\\install\\08b637a9\\bin"
-libdir     = "C:\\Users\\hecto\\Desktop\\Projects\\Turing\\BaseMachines\\BaseMachineCompiler\\.stack-work\\install\\08b637a9\\lib\\x86_64-windows-ghc-9.2.5\\BaseMachineCompiler-0.1.0.0-38AodinCA37ENqjAFj0L1P-BaseMachineCompiler"
-dynlibdir  = "C:\\Users\\hecto\\Desktop\\Projects\\Turing\\BaseMachines\\BaseMachineCompiler\\.stack-work\\install\\08b637a9\\lib\\x86_64-windows-ghc-9.2.5"
-datadir    = "C:\\Users\\hecto\\Desktop\\Projects\\Turing\\BaseMachines\\BaseMachineCompiler\\.stack-work\\install\\08b637a9\\share\\x86_64-windows-ghc-9.2.5\\BaseMachineCompiler-0.1.0.0"
-libexecdir = "C:\\Users\\hecto\\Desktop\\Projects\\Turing\\BaseMachines\\BaseMachineCompiler\\.stack-work\\install\\08b637a9\\libexec\\x86_64-windows-ghc-9.2.5\\BaseMachineCompiler-0.1.0.0"
-sysconfdir = "C:\\Users\\hecto\\Desktop\\Projects\\Turing\\BaseMachines\\BaseMachineCompiler\\.stack-work\\install\\08b637a9\\etc"
+bindir     = "C:\\Users\\Guest1\\IdeaProjects\\Turing2\\.stack-work\\install\\6adc5b93\\bin"
+libdir     = "C:\\Users\\Guest1\\IdeaProjects\\Turing2\\.stack-work\\install\\6adc5b93\\lib\\x86_64-windows-ghc-9.2.5\\BaseMachineCompiler-0.1.0.0-38AodinCA37ENqjAFj0L1P-BaseMachineCompiler"
+dynlibdir  = "C:\\Users\\Guest1\\IdeaProjects\\Turing2\\.stack-work\\install\\6adc5b93\\lib\\x86_64-windows-ghc-9.2.5"
+datadir    = "C:\\Users\\Guest1\\IdeaProjects\\Turing2\\.stack-work\\install\\6adc5b93\\share\\x86_64-windows-ghc-9.2.5\\BaseMachineCompiler-0.1.0.0"
+libexecdir = "C:\\Users\\Guest1\\IdeaProjects\\Turing2\\.stack-work\\install\\6adc5b93\\libexec\\x86_64-windows-ghc-9.2.5\\BaseMachineCompiler-0.1.0.0"
+sysconfdir = "C:\\Users\\Guest1\\IdeaProjects\\Turing2\\.stack-work\\install\\6adc5b93\\etc"
 
 getBinDir     = catchIO (getEnv "BaseMachineCompiler_bindir")     (\_ -> return bindir)
 getLibDir     = catchIO (getEnv "BaseMachineCompiler_libdir")     (\_ -> return libdir)

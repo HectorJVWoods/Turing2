@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="991a9d17-9c99-47a6-96e7-fcd724433d12" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DeBruijinLambdaCalculus.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ECalc.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraduallyTypedLambdaCalculus.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/base_4_16_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/base_4_16_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ghc_bignum_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ghc_bignum_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ghc_prim_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ghc_prim_0_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BMIPF.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BMIPF.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BMIPF.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BMIPF.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseFunctions.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseFunctions.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseFunctions.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseFunctions.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseMachines.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseMachines.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseMachines.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseMachines.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/GatesFile.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/GatesFile.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/GatesFile.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/GatesFile.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Helpers.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Helpers.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Helpers.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Helpers.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculus.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculus.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculus.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculusTests.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculusTests.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculusTests.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculusTests.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Main.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Main.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Main.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Tape.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Tape.hi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Tape.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Tape.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/autogen/Paths_BaseMachineCompiler.hs" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/autogen/Paths_BaseMachineCompiler.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/autogen/cabal_macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/autogen/cabal_macros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/setup-config" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/setup-config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/stack-project-root" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/stack-project-root" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/stack.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/stack.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_program.tbm" beforeDir="false" afterPath="$PROJECT_DIR$/example_program.tbm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculusTests.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Tape.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Tape.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LambdaCalculus.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/LambdaCalculus.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LambdaCalculusTests.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tape.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tape.hs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Haskell Module" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IVH4eEX50GInhUyKPjDJIE5cf8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="HaskellStackConfigurationType" factoryName="Haskell Stack Runner" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="BaseMachineCompiler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="executableName" value="BaseMachineCompiler" />
+      <option name="programArgs" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="stackArgs" value="" />
+      <option name="workingDirPath" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="991a9d17-9c99-47a6-96e7-fcd724433d12" name="Changes" comment="" />
+      <created>1670259641615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670259641615</updated>
+      <workItem from="1670259643135" duration="299000" />
+      <workItem from="1670259965979" duration="1396000" />
+      <workItem from="1670324360071" duration="3074000" />
+      <workItem from="1670361334424" duration="125000" />
+      <workItem from="1670361487599" duration="2724000" />
+      <workItem from="1670444381939" duration="30919000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

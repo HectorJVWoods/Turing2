@@ -6,7 +6,7 @@ import GatesFile
 import Tape
 import BMIPF
 import System.Environment.Blank (getArgs)
-import LambdaCalculusTests
+import LambdaCalculus
 
 gatesFilePath :: String
 gatesFilePath = "user_gates.gates"
@@ -34,11 +34,12 @@ compileBaseProgram = do
                putStrLn $ baseMachineToString baseMachine
                putStrLn "--------BASE PROGRAM COMPILATION DONE--------"
                --_ <- getLine
+               putStrLn $ tapeToString $ runBaseMachine baseMachine programInput
                return ()
 
 
 main :: IO ()
-main = lambdaTests
+main = runLam
 
 
 

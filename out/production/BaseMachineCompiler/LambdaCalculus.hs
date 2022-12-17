@@ -1,5 +1,4 @@
-module LambdaCalculus(LCTerm, betaReduce, fst', fst'AppliedToTrue) where
-
+module LambdaCalculus(LambdaE, runLam) where
 
 -- True:
 -- TRUE := λx.λy.x
@@ -11,37 +10,57 @@ module LambdaCalculus(LCTerm, betaReduce, fst', fst'AppliedToTrue) where
 -- Example of using NOT:
 -- p := True = λx.λy.x
 -- TRUE FALSE TRUE = λx.λy.x FALSE TRUE =
+-- https://www.youtube.com/watch?v=knD_5pBCmuI
 
-type Symbol = String
-data LCTerm = Binding Symbol LCTerm | Application LCTerm LCTerm | Variable Symbol deriving (Eq)
-instance Show LCTerm where
-    show (Binding symbol term) = "\\" ++ symbol ++ "." ++ show term
-    show (Application term1 term2) = "(" ++ show term1 ++ " " ++ show term2 ++ ")"
-    show (Variable symbol) = symbol
+--                x               (x x)           \x.x
+data LambdaE = Var String | Abs String LambdaE | App LambdaE LambdaE deriving (Show, Eq)
 
--- substitution is defined as:
--- [a := b] i.e "replace a with b"
--- For Variables:
---x[ x := e ] = e (i.e replace instances of x with e)
---y[ x := e ] = y (i.e don't replace instances of non-x with e)
--- For bindings:
---(λx.e1)[ x := e2 ] = (λx.e1[ x := e2 ]) (i.e replace instances of x with e2 in e1)
--- For Applications:
---(e1 e2)[ x := e3 ] = (e1[ x := e3 ] e2[ x := e3 ]) (i.e replace instances of x with e3 in e1 and e2)
-substitute :: LCTerm -> Symbol -> LCTerm -> LCTerm
-substitute (Application e1 e2) y e3 = Application (substitute e1 y e3) (substitute e2 y e3)
-substitute (Binding x e1) y e2      = Binding x (substitute e1 y e2)
-substitute (Variable x) y e         | x == y    = e
-                                    | otherwise = Variable x
 
-betaReduce :: LCTerm -> LCTerm
-betaReduce (Application (Binding x t1) t2) = substitute t1 x t2
-betaReduce (Application t1 t2)             = Application (betaReduce t1) (betaReduce t2)
-betaReduce (Binding x t)                   = Binding x (betaReduce t)
-betaReduce t                               = t
 
-fst' :: LCTerm
-fst' = Binding "x" (Binding "y" (Variable "x"))
 
-fst'AppliedToTrue :: LCTerm
-fst'AppliedToTrue = Application fst' (Variable "True")
+betaReductionStep :: LambdaE -> LambdaE
+betaReductionStep (App (Abs x t) s) = substitute t (Var x) s
+betaReductionStep (App t s) = App (betaReductionStep t) s
+betaReductionStep (Abs x t) = Abs x (betaReductionStep t)
+betaReductionStep (Var x) = Var x
+
+betaReduction :: LambdaE -> LambdaE -- Performs beta reduction until no more reductions can be made
+betaReduction x = if x == betaReductionStep x then x else betaReduction (betaReductionStep x)
+
+
+freeVariables :: LambdaE -> [LambdaE]
+freeVariables (Var x) = [Var x] -- free variables of x are just x
+freeVariables (Abs x e) = filter (/= Var x) (freeVariables e) -- free variables of \x.e are free variables of e, except x
+freeVariables (App e1 e2) = freeVariables e1 ++ freeVariables e2 -- free variables of e1 e2 are free variables of e1 and free variables of e2
+
+
+substitute :: LambdaE -> LambdaE -> LambdaE -> LambdaE
+substitute term varName replacement = f term varName replacement
+    where
+        f (Var y) (Var x) r | x == y       = r -- y[x := r] = if x == y then r else y
+                            | otherwise    = Var y
+        f (App t s) (Var x) r = App (f t (Var x) r) (f s (Var x) r) -- (t s)[x := r] = (t[x := r] s[x := r])
+        f (Abs y t) (Var x) r | x == y                       = Abs y t -- this would be redundant, so skip it
+                              | Var y `elem` freeVariables r = error ("substitute: cannot substitute because of variable capture. Var " ++ y ++ " is free in " ++ show r)
+                              | x /= y                       = Abs y (f t (Var x) r) -- \y.t[x := r]
+
+
+
+
+
+
+
+
+runLam :: IO ()
+runLam = do
+    runSim example1
+
+
+runSim :: LambdaE -> IO ()
+runSim e = do
+    print e
+    print $ betaReduction e
+    print "------------------"
+
+example1 :: LambdaE
+example1 = App (Abs "x" (Abs "y" (Var "x"))) (Abs "x" (Abs "y" (Var "y")))

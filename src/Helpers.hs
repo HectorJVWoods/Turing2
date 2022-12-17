@@ -1,5 +1,5 @@
 module Helpers(boolToChar, charToBool, split, splitByFunc, removeWSpace, removeAllNonNumbersAndReadAsInt, countElem,
-findBetween, findBetweenAndReturnRest, isInt, charToInt) where
+findBetween, findBetweenAndReturnRest, isInt, charToInt, replace) where
 
 import Data.Char (isDigit)
 
@@ -72,3 +72,9 @@ charToInt '7' = 7
 charToInt '8' = 8
 charToInt '9' = 9
 charToInt c   = error ("charToInt: Invalid character" ++ [c])
+
+
+replace :: Eq a => a -> a -> [a] -> [a]
+replace _ _ [] = []
+replace a b (x:xs) | x == a    = b:replace a b xs
+                   | otherwise = x:replace a b xs
