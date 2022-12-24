@@ -4,19 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="991a9d17-9c99-47a6-96e7-fcd724433d12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EitherOrBoth.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Grammars.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Problems.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Set.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/base_4_16_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/base_4_16_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ghc_bignum_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ghc_bignum_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ghc_prim_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ghc_prim_0_8_0.xml" afterDir="false" />
+    <list default="true" id="991a9d17-9c99-47a6-96e7-fcd724433d12" name="Changes" comment="Started working on automata theory stuff">
+      <change afterPath="$PROJECT_DIR$/src/LanguagesAndProblems.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.stack-work/stack.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/stack.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ECalc.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ECalc.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/ECalc.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/ECalc.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Machine.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Machine.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EitherOrBoth.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EitherOrBoth.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Grammars.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grammars.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Machine.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Machine.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problems.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Set.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Set.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +90,23 @@
       <workItem from="1671667720829" duration="658000" />
       <workItem from="1671668401466" duration="6237000" />
       <workItem from="1671741750921" duration="1116000" />
-      <workItem from="1671759880284" duration="16371000" />
+      <workItem from="1671759880284" duration="18848000" />
     </task>
+    <task id="LOCAL-00001" summary="Started working on automata theory stuff">
+      <created>1671851980342</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671851980342</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Started working on automata theory stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on automata theory stuff" />
   </component>
 </project>

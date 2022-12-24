@@ -1,15 +1,10 @@
 module Machine where
-
-import Tape
-import TuringType
-import BaseMachines
-
-type MacConnection = (TuringType, TapeLength) -- The input and output of a machine
-data NonBaseMachine = NonBaseMachine MacConnection Machine MacConnection
-type Machine = Either BaseMachine NonBaseMachine
-data MachineTree = MachineTree Machine MachineTree MachineTree | Leaf | Tape
+import Grammars
 
 
 
-isValidMachineTransition :: MacConnection -> MacConnection -> Bool
-isValidMachineTransition = (==)
+
+
+
+-- The most basic definition of a machine is something which takes a bunch of symbols, and converts them into a bunch of other symbols.
+type Machine = ([Symbol] -> [Symbol])

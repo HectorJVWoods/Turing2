@@ -7,6 +7,7 @@ import Tape
 import BMIPF
 import System.Environment.Blank (getArgs)
 import LambdaCalculus
+import LanguagesAndProblems
 
 gatesFilePath :: String
 gatesFilePath = "user_gates.gates"

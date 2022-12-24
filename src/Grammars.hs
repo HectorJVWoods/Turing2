@@ -14,6 +14,7 @@ type Symbol = String -- I use strings instead of chars to allow multiple charact
 type SymbolSet = Set Symbol -- A set of symbols
 
 
+
 -- A grammar is a set of production rules that generate a language.
 -- For example the grammar for positive and negative integers is as follows:
 -- S -> A  |  -A

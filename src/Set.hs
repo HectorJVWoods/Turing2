@@ -1,6 +1,6 @@
 module Set(Set, insertToSet, setFromList, emptySet, mapOverSet, listFromSet) where
 
-data Set a = Set [a] deriving (Show, Eq, Foldable)
+data Set a = Set [a] deriving (Show, Eq)
 
 
 

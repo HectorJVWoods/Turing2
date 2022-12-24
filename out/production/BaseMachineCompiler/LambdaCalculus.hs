@@ -15,9 +15,6 @@ module LambdaCalculus(LambdaE, runLam) where
 --                x               (x x)           \x.x
 data LambdaE = Var String | Abs String LambdaE | App LambdaE LambdaE deriving (Show, Eq)
 
-
-
-
 betaReductionStep :: LambdaE -> LambdaE
 betaReductionStep (App (Abs x t) s) = substitute t (Var x) s
 betaReductionStep (App t s) = App (betaReductionStep t) s
@@ -45,6 +42,11 @@ substitute term varName replacement = f term varName replacement
                               | x /= y                       = Abs y (f t (Var x) r) -- \y.t[x := r]
 
 
+
+alphaConvert :: LambdaE -> String -> LambdaE
+alphaConvert (Var x) y = Var y
+alphaConvert (App t s) y = App (alphaConvert t y) (alphaConvert s y)
+alphaConvert (Abs x t) y = Abs y (substitute t (Var x) (Var y))
 
 
 
