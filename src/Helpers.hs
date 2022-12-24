@@ -25,7 +25,6 @@ split (x:xs) c | x == c    = ([], xs)
                | otherwise = (x:ys, zs)
                where (ys, zs) = split xs c
                
-               
 splitByFunc :: (a -> Bool) -> [a] -> ([a], [a])
 splitByFunc _ [] = ([], [])
 splitByFunc f (x:xs) | f x       = ([], xs)

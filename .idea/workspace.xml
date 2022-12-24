@@ -5,49 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991a9d17-9c99-47a6-96e7-fcd724433d12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DeBruijinLambdaCalculus.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ECalc.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraduallyTypedLambdaCalculus.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EitherOrBoth.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Grammars.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Problems.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Set.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/base_4_16_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/base_4_16_4_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/ghc_bignum_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ghc_bignum_1_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/ghc_prim_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ghc_prim_0_8_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BMIPF.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BMIPF.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BMIPF.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BMIPF.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseFunctions.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseFunctions.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseFunctions.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseFunctions.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseMachines.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseMachines.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseMachines.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/BaseMachines.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/GatesFile.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/GatesFile.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/GatesFile.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/GatesFile.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Helpers.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Helpers.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Helpers.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Helpers.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculus.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculus.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculus.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculus.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculusTests.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculusTests.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculusTests.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/LambdaCalculusTests.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Main.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Main.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Main.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Tape.hi" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Tape.hi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Tape.o" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler-tmp/Tape.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/BaseMachineCompiler.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/autogen/Paths_BaseMachineCompiler.hs" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/autogen/Paths_BaseMachineCompiler.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/autogen/cabal_macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/build/BaseMachineCompiler/autogen/cabal_macros.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/setup-config" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/setup-config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/stack-project-root" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/stack-project-root" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.stack-work/stack.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/stack.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_program.tbm" beforeDir="false" afterPath="$PROJECT_DIR$/example_program.tbm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculusTests.hs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Tape.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Tape.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ECalc.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ECalc.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LambdaCalculus.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/LambdaCalculus.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LambdaCalculusTests.hs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tape.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tape.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Machine.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Machine.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +50,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -115,6 +85,10 @@
       <workItem from="1670361334424" duration="125000" />
       <workItem from="1670361487599" duration="2724000" />
       <workItem from="1670444381939" duration="30919000" />
+      <workItem from="1671667720829" duration="658000" />
+      <workItem from="1671668401466" duration="6237000" />
+      <workItem from="1671741750921" duration="1116000" />
+      <workItem from="1671759880284" duration="16371000" />
     </task>
     <servers />
   </component>
