@@ -4,7 +4,7 @@ import Grammars
 import EitherOrBoth
 import Machine
 import Set
--- Sorry this module is so long, I had to combine them to avoid a circular dependency
+-- Sorry this module is so long, I had to combine Languages and Problems into one file to avoid a circular dependency
 
 -- Languages are rather mysterious things; for some languages we know their exact structure, but for others we only know
 -- Methods to check whether something is a member of a language.
@@ -12,7 +12,7 @@ import Set
 -- and verify those solutions, for NP problems we can only verify solutions in polynomial time.
 -- it is unknown as to whether P = NP or not, but most experts believe it is not.
 -- Therefore I give two methods of defining a language; either generate it with a generator, or check if it is a member
--- using a machine, or both. For P problems it should generally be easy to do both, and for NP problems, only possible to
+-- using a machine, or both. For P languages it should generally be easy to do both, and for NP languages, only possible to
 -- use an Accepting Machine.
 -- There are also problems for which neither is possible, known as undecidable problems.
 -- Any language that can be given a yes/no answer by a Turing Machine in finite time is decidable, and therefore P or NP.
@@ -24,10 +24,10 @@ import Set
 -- Therefore, in short here are the possible languages, as I see it:
 -- 1. Undecidable languages; not possible to generate or check membership.
 -- 2. Semidecidable languages; possible to determine that something is a member, but not possible to rule out that some things are not.
---    i.e there is an acceptor that is semidecidable, but no generator.
+--    i.e there is an acceptor that is semi-decidable, but no generator.
 -- 3. NP-Decidable languages; possible to check membership. i.e, there is an acceptor that is decidable, but no generator.
 -- 4. P-Decidable languages; possible to generate and check membership. i.e, there is both a generator and an acceptor that are decidable.
--- Note that being generation implies acceptability; if we have a grammar that can generate a language, then we can
+-- Note that a language having a  generator implies acceptability; if we have a grammar that can generate a language, then we can
 -- construct a turing machine that uses that grammar to check whether inputs are members of that language by derivation
 -- using that grammar. However the same is not true in reverse; you cannot use an acceptor to create a generator for a language.
 -- (at least provided P != NP. if P==NP, then it is possible there might be some very esoteric way to do it!)
@@ -40,7 +40,7 @@ import Set
 -- See Grammars.hs for more information on Grammars.
 type Generator = Grammar
 -- An acceptor is a machine that takes a set of symbols, and returns true if the set is a member of the language.
-type Acceptor = Machine
+type Acceptor = Machine -- TODO: maybe this should instead be a problem?
 type Language = EitherBothOrNeither Generator Acceptor
 -- I consider "abstract languages" to be languages with neither a generator nor an acceptor. I call them abstract
 -- since if we can neither generate nor check membership, then we are dealing with something we know/suspect might exist,
@@ -59,6 +59,11 @@ languageIsAbstract (Neither) = True -- Has neither a generator nor an acceptor, 
 
 
 
+
+-- Problems are incomplete; the stuff below is just a placeholder for now. Should NOT be used for production
+
+
+
 type ProblemResult = [Symbol]
 -- A "problem" can be considered as a "question" that takes an input, and produces one of n outputs.
 -- It is possible for a problem to have an infinite number of outputs, as is the case with the problem of generating
@@ -69,9 +74,9 @@ type ProblemResult = [Symbol]
 -- A machine that solves a problem will take a set of symbols as input, and produce one of the possible
 -- problem results as output. We also give the problem a name to differentiate it from other problems that might
 -- happen to have the same set of possible outputs.
-type ProblemType = Set ProblemResult
-type ProblemName = String
-type Problem = (ProblemName, Language, ProblemType)
+type ProblemClass = Set ProblemResult
+type ProblemName = Symbol
+type Problem = (ProblemName, Language, ProblemClass)
 -- Some of you might be screaming at me "what do you mean a problem can't have multiple inputs?!", but it's important to remember
 -- that the idea of two or more inputs offers no additional expressive power when dealing with strings of indeterminate length.
 -- For example, let's say we have the problem of adding two numbers together. We can represent this as a problem with two inputs,
@@ -81,11 +86,51 @@ type Problem = (ProblemName, Language, ProblemType)
 -- At the level of writing programs it is useful to consider multiple inputs, but at this level
 -- it just makes defining what a problem is more complicated.
 
+-- We can define a new problem class simply from the set of possible outputs.
+newProblemClass :: [ProblemResult] -> ProblemClass
+newProblemClass = setFromList
+
+-- To define a new problem P of name N over language L and problem class C:
+newProblemOfClass :: ProblemName -> Language -> ProblemClass -> Problem
+newProblemOfClass = (,,)
+
 
 -- A decision problem is a problem that can be solved by a machine that returns a yes/no answer.
 -- This is used a lot to define properties over grammars and turing machines. See Machine.hs for examples.
-decisionProblem :: ProblemType
-decisionProblem = setFromList [["Yes"], ["No"]]
+decisionProblem :: ProblemClass
+decisionProblem = newProblemClass [["Yes"], ["No"]]
 
+-- We can now define decision problems simply from a problem name and a language.
 newDecisionProblem :: ProblemName -> Language -> Problem
-newDecisionProblem name language = (name, language, decisionProblem)
+newDecisionProblem pName lang = newProblemOfClass pName lang decisionProblem
+
+-- An abstract problem is a named ProblemClass, with no explicit language.
+-- For example, there is the "membership problem" which is "for a given language, is this string a member of that language?"
+-- There is an individual membership problem for each individual language, for example we might call the membership problem
+-- for the language of prime numbers "prime membership problem".
+-- It is useful to define abstract problems, since the membership problem will have the same set of possible outputs for all
+-- possible languages. For many problems it may be possible to define a single machine that can solve all problems over
+-- an abstract problem, although the membership problem is not one of them. We can however solve the membership problem
+-- in an abstract sense over any NP-Decidable language. So we could specify a new abstract problem "NP membership problem",
+-- and design a single machine that can solve the membership problem for any NP-Decidable language.
+type AbstractProblem = (ProblemName, ProblemClass)
+
+-- We can now define new abstract problems simply from a problem name and a problem class.
+newAbstractProblem :: ProblemName -> ProblemClass -> AbstractProblem
+newAbstractProblem = (,)
+
+-- We can now create abstract decision problems of a given name like this:
+newAbstractDecisionProblem :: ProblemName -> AbstractProblem
+newAbstractDecisionProblem pName = newAbstractProblem pName decisionProblem
+
+-- Let's now create the abstract membership problem:
+abstractMembershipProblem :: AbstractProblem
+abstractMembershipProblem = newAbstractDecisionProblem "Membership Problem"
+
+
+
+
+
+-- A 'solution' to a problem is a machine that the programmer claims solves the problem. Whether it does so is
+-- another matter, we will define another data type to test solutions later.
+data Solution = Solution Problem Machine

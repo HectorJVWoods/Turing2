@@ -31,7 +31,7 @@ data GrammarType = ContextFree | ContextSensitive | Regular | RecursivelyEnumera
 
 
 describeGrammarType :: GrammarType -> String
-describeGrammarType Uncomputable = "Uncomputable; cannot by run on a turing machine"
+describeGrammarType Uncomputable = "Uncomputable; cannot be run on a turing machine"
 describeGrammarType Regular = "Regular; can be run on a finite state automaton"
 describeGrammarType ContextSensitive = "Context Sensitive; can be run on a turing machine with limited memory"
 describeGrammarType ContextFree = "Context Free; can be run on a pushdown automaton"
@@ -44,9 +44,12 @@ determineGrammarType g | isType3 g = Regular
                         | isType0 g = RecursivelyEnumerable
                         | otherwise = Uncomputable
 
+grammarFromRules :: [ProductionRule] -> Grammar
+grammarFromRules = setFromList
+
 -- Let's implement the grammar for positive and negative integers
 integerGrammar :: Grammar
-integerGrammar = setFromList rules
+integerGrammar = grammarFromRules rules
     where
         rules = [([NonTerminal ["入"]], [NonTerminal ["A"]]),
                  ([NonTerminal ["入"]], [NonTerminal ["-"], NonTerminal ["A"]]),

@@ -4,21 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="991a9d17-9c99-47a6-96e7-fcd724433d12" name="Changes" comment="Started working on automata theory stuff">
-      <change afterPath="$PROJECT_DIR$/src/LanguagesAndProblems.hs" afterDir="false" />
+    <list default="true" id="991a9d17-9c99-47a6-96e7-fcd724433d12" name="Changes" comment="Added problems">
+      <change afterPath="$PROJECT_DIR$/program.turing" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.stack-work/stack.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/stack.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/ECalc.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/ECalc.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Machine.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Machine.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EitherOrBoth.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EitherOrBoth.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseMachineCompiler.cabal" beforeDir="false" afterPath="$PROJECT_DIR$/Turing2.cabal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseMachineCompiler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Turing2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_program.tbm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/BMIPF.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/BaseFunctions.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/BaseMachines.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/ECalc.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Errors.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/GatesFile.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Helpers.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/LambdaCalculus.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Machine.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Main.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/ProgramCompiler.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/Tape.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BaseMachineCompiler/TuringType.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/program.tbm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BMIPF.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseFunctions.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseMachines.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeBruijinLambdaCalculus.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ECalc.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Errors.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatesFile.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraduallyTypedLambdaCalculus.hs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Grammars.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grammars.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LambdaCalculus.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LanguagesAndProblems.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/LanguagesAndProblems.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Machine.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Machine.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problems.hs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Set.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Set.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProgramCompiler.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tape.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TuringType.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/two_tape_program.tbm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_gates.gates" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,26 +67,31 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IVH4eEX50GInhUyKPjDJIE5cf8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="HaskellStackConfigurationType" factoryName="Haskell Stack Runner" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="BaseMachineCompiler" />
+      <module name="Turing2" />
       <option name="allowRunningInParallel" value="false" />
       <option name="executableName" value="BaseMachineCompiler" />
       <option name="programArgs" value="" />
@@ -68,6 +101,19 @@
       </option>
       <option name="stackArgs" value="" />
       <option name="workingDirPath" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Turing2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Turing2" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,7 +136,8 @@
       <workItem from="1671667720829" duration="658000" />
       <workItem from="1671668401466" duration="6237000" />
       <workItem from="1671741750921" duration="1116000" />
-      <workItem from="1671759880284" duration="18848000" />
+      <workItem from="1671759880284" duration="29691000" />
+      <workItem from="1672091137531" duration="1509000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on automata theory stuff">
       <created>1671851980342</created>
@@ -99,14 +146,23 @@
       <option name="project" value="LOCAL" />
       <updated>1671851980342</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added problems">
+      <created>1671854450730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671854450730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Started working on automata theory stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started working on automata theory stuff" />
+    <MESSAGE value="Added problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added problems" />
   </component>
 </project>
