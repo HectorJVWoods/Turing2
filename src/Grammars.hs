@@ -1,17 +1,10 @@
-module Grammars where
+module Grammars(Grammar) where
 import Set
-import Helpers
-import Data.List (isInfixOf)
+import SymbolsAndMappings
 
 
 
 
--- All variables can be represented by a sequence of symbols, as can their data e.g
--- x = 1, y = "hello", z = 3
--- both x and 1 are symbols, "hello" is a sequence of symbols.
--- Symbols are the building blocks of types, and types are the building blocks of programs.
-type Symbol = String -- I use strings instead of chars to allow multiple character symbols
-type SymbolSet = Set Symbol -- A set of symbols
 
 
 
@@ -24,25 +17,12 @@ type SymbolSet = Set Symbol -- A set of symbols
 -- A terminal symbol is a symbol that cannot be expanded any further.
 -- A non-terminal symbol is a symbol that can be expanded into other symbols.
 -- An expression is evaluated through derivation until there are no more non-terminal symbols.
-data GrammarSymbol = Terminal [Symbol] | NonTerminal [Symbol] | Blank  deriving (Show, Eq)
-type ProductionRule = ([GrammarSymbol], [GrammarSymbol]) -- A production rule is a mapping from a sequence of symbols to another sequence of symbols
+data GrammarSymbol = Terminal Expression | NonTerminal Expression | Blank  deriving (Show, Eq)
+type ProductionRule = (GrammarSymbol, GrammarSymbol) -- A production rule is a mapping from one grammar symbol to another
 type Grammar = Set ProductionRule -- A grammar is a set of production rules
-data GrammarType = ContextFree | ContextSensitive | Regular | RecursivelyEnumerable | Uncomputable deriving (Show, Eq) -- A grammar type is a type of grammar, e.g context free, context sensitive, regular, unrestricted
+data GrammarType = ContextFree | ContextSensitive
+                     | Regular | RecursivelyEnumerable | Uncomputable deriving (Show, Eq) -- A grammar type is a type of grammar, e.g context free, context sensitive, regular, unrestricted
 
-
-describeGrammarType :: GrammarType -> String
-describeGrammarType Uncomputable = "Uncomputable; cannot be run on a turing machine"
-describeGrammarType Regular = "Regular; can be run on a finite state automaton"
-describeGrammarType ContextSensitive = "Context Sensitive; can be run on a turing machine with limited memory"
-describeGrammarType ContextFree = "Context Free; can be run on a pushdown automaton"
-describeGrammarType RecursivelyEnumerable = "Recursively Enumerable; can be run on a turing machine with infinite memory"
-
-determineGrammarType :: Grammar -> GrammarType
-determineGrammarType g | isType3 g = Regular
-                        | isType2 g = ContextFree
-                        | isType1 g = ContextSensitive
-                        | isType0 g = RecursivelyEnumerable
-                        | otherwise = Uncomputable
 
 grammarFromRules :: [ProductionRule] -> Grammar
 grammarFromRules = setFromList
@@ -51,33 +31,33 @@ grammarFromRules = setFromList
 integerGrammar :: Grammar
 integerGrammar = grammarFromRules rules
     where
-        rules = [([NonTerminal ["入"]], [NonTerminal ["A"]]),
-                 ([NonTerminal ["入"]], [NonTerminal ["-"], NonTerminal ["A"]]),
-                 ([NonTerminal ["A"]], [NonTerminal ["A"], NonTerminal ["A"]]),
-                 ([NonTerminal ["A"]], [Terminal ["0"]]),
-                 ([NonTerminal ["A"]], [Terminal ["1"]]),
-                 ([NonTerminal ["A"]], [Terminal ["2"]]),
-                 ([NonTerminal ["A"]], [Terminal ["3"]]),
-                 ([NonTerminal ["A"]], [Terminal ["4"]]),
-                 ([NonTerminal ["A"]], [Terminal ["5"]]),
-                 ([NonTerminal ["A"]], [Terminal ["6"]]),
-                 ([NonTerminal ["A"]], [Terminal ["7"]]),
-                 ([NonTerminal ["A"]], [Terminal ["8"]]),
-                 ([NonTerminal ["A"]], [Terminal ["9"]]),
-                 ([NonTerminal ["A"]], [Blank])]
+        rules = [ (NonTerminal "S", NonTerminal "A")
+                , (NonTerminal "S", NonTerminal "-A")
+                , (NonTerminal "A", NonTerminal "AA")
+                , (NonTerminal "A", Terminal "0")
+                , (NonTerminal "A", Terminal "1")
+                , (NonTerminal "A", Terminal "2")
+                , (NonTerminal "A", Terminal "3")
+                , (NonTerminal "A", Terminal "4")
+                , (NonTerminal "A", Terminal "5")
+                , (NonTerminal "A", Terminal "6")
+                , (NonTerminal "A", Terminal "7")
+                , (NonTerminal "A", Terminal "8")
+                , (NonTerminal "A", Terminal "9")
+                ]
 
 
 
-
-
-
+-- I broke this code by changing some types around, not important but I leave it since
+-- Eventually will want to rewrite this code in Turing.
+{-
 -- Currently the grammar allows for blank symbols to be on the left hand side of a production rule. Such grammars
 -- Are not computable on a turing machine, so we need a way to check if this is the case.
 -- The set of grammars that do not allow for the left hand side of a production rule to be blank are called Type-0 grammars,
 -- and generate Recursively enumerable languages.
 
 isType0ProdRule :: ProductionRule -> Bool
-isType0ProdRule (lhs, _) = not $ Blank `elem` lhs
+isType0ProdRule (lhs, _) = lhs /= Blank
 
 isType0 :: Grammar -> Bool
 isType0 = all isType0ProdRule . listFromSet
@@ -101,6 +81,9 @@ intGrammarIsType0 = isType0 integerGrammar
 -- (and then any number of additional terminal/non-terminal symbols), and the right hand side must consist of at least one
 -- symbol of any kind.
 
+isType1 :: Grammar -> Bool
+isType1 = all isType1ProdRule . listFromSet
+
 isType1ProdRule :: ProductionRule -> Bool
 isType1ProdRule (lhs, rhs) = isType1LHS lhs && isType1RHS rhs
                          where isType1LHS xs = case xs of
@@ -113,8 +96,7 @@ isType1ProdRule (lhs, rhs) = isType1LHS lhs && isType1RHS rhs
                                                 [Blank] -> False -- Consists of only blank, so not type-1
                                                 _       -> True -- Consists of at least one non-blank symbol, so type-1
 
-isType1 :: Grammar -> Bool
-isType1 = all isType1ProdRule . listFromSet
+
 
 intGrammarIsType1 :: Bool
 intGrammarIsType1 = isType1 integerGrammar
@@ -169,3 +151,5 @@ isType3ProdRule (lhs, rhs) = isSingleNonTerminal lhs && isType3RHS rhs
 
 isType3 :: Grammar -> Bool
 isType3 = all isType3ProdRule . listFromSet
+
+-}
