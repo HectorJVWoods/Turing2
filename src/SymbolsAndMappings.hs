@@ -1,10 +1,15 @@
-module SymbolsAndMappings(Expression, Symbol, SymbolSet, Mapping, getValueFromKey) where
+module SymbolsAndMappings(Expression, Symbol, SymbolSet, Mapping, getValueFromKey, allLegalSymbols) where
 import Set
 -- All variables can be represented by a sequence of symbols, as can their data e.g
 -- x = 1, y = "hello", z = 3
 -- both x and 1 are symbols, "hello" is a sequence of symbols.
 -- Symbols are the building blocks of types, and types are the building blocks of programs.
 type Symbol = Char
+
+allLegalSymbols :: SymbolSet
+allLegalSymbols = setFromList allChars
+               where allChars   = ['a'..'z'] ++ ['A'..'Z'] ++ ['0'..'9'] ++ ['_'] ++ otherChars
+                     otherChars = ".,;:!?@#$%^&*()[]{}<>|\\`~→"
 type SymbolSet = Set Symbol -- A set of symbols
 type Expression = [Symbol] -- An expression is a sequence of symbols
 
