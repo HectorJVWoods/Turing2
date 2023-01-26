@@ -1,16 +1,20 @@
 module Helpers(boolToChar, charToBool, split, splitByFunc, removeWSpace, removeAllNonNumbersAndReadAsInt, countElem,
-findBetween, findBetweenAndReturnRest, isInt, charToInt, replace) where
+findBetween, findBetweenAndReturnRest, isInt, charToInt, replace, wordsWhen, splitBySublist) where
 
 import Data.Char (isDigit)
+import Data.List (isPrefixOf)
 
-
-
+-- Split by a predicate
+wordsWhen :: (Char -> Bool) -> String -> [String]
+wordsWhen p s =  case dropWhile p s of
+                      "" -> []
+                      s' -> w : wordsWhen p s''
+                            where (w, s'') = break p s'
 
 
 boolToChar :: Bool -> Char
 boolToChar True  = '1'
 boolToChar False = '0'
-
 
 charToBool :: Char -> Bool
 charToBool '1' = True
@@ -18,6 +22,13 @@ charToBool '0' = False
 charToBool c   = error ("charToBool: Invalid character" ++ [c])
 
 
+splitBySublist :: Eq a => [a] -> [a] -> ([a], [a])
+splitBySublist [] _ = ([], [])
+splitBySublist _ [] = ([], [])
+splitBySublist xs ys | ys `isPrefixOf` xs = ([], drop (length ys) xs)
+                     | otherwise          = (x:ys', zs)
+                     where (ys', zs) = splitBySublist (tail xs) ys
+                           x         = head xs
 
 split :: Eq a => [a] -> a -> ([a], [a])
 split [] c = ([c], [])

@@ -5,19 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991a9d17-9c99-47a6-96e7-fcd724433d12" name="Changes" comment="Removed old version, began writing compiler">
-      <change afterPath="$PROJECT_DIR$/src/MapSet.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SubstitutionMachine.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SymbolsAndMappings.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Types.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Win32_2_12_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/array_0_5_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/deepseq_1_4_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/directory_1_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/filepath_1_4_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mtl_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/time_1_11_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/transformers_0_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExampleGrammar.turgram" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machines/Binary/and2.machine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machines/examples/1sWith2s.machine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machines/examples/ExampleMachine.machine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MachineFileCompiler.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Machines.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/base_4_16_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/base_4_16_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ghc_bignum_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ghc_bignum_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ghc_prim_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ghc_prim_0_8_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/setup-config" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/setup-config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/setup-config" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/setup-config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/stack-project-root" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/dist/8a54c84f/stack-project-root" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.stack-work/stack.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/.stack-work/stack.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turing2.cabal" beforeDir="false" afterPath="$PROJECT_DIR$/Turing2.cabal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turing2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Turing2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing2/Grammars.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing2/Grammars.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing2/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing2/Helpers.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing2/LanguagesAndProblems.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing2/LanguagesAndProblems.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing2/Machine.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing2/Machine.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing2/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing2/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing2/Program.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing2/Set.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing2/Set.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program.turing" beforeDir="false" afterPath="$PROJECT_DIR$/program.turing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExampleGrammar.turgram" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Grammars.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grammars.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LanguagesAndProblems.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/LanguagesAndProblems.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Machine.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Machine.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Machine.hs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapSet.hs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Set.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Set.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SubstitutionMachine.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubstitutionMachine.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SymbolsAndMappings.hs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +62,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="pmxoh11y" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,23 +76,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hecto\IdeaProjects\Turing2\machines\examples" />
+      <recent name="C:\Users\hecto\IdeaProjects\Turing2\src" />
+      <recent name="C:\Users\hecto\IdeaProjects\Turing2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Haskell Stack.Unnamed (1)">
+    <configuration name="Unnamed (1)" type="HaskellStackConfigurationType" factoryName="Haskell Stack Runner" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="Turing2" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="executableName" value="Turing2" />
+      <option name="programArgs" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="stackArgs" value="" />
+      <option name="workingDirPath" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="HaskellStackConfigurationType" factoryName="Haskell Stack Runner" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Turing2" />
       <option name="allowRunningInParallel" value="false" />
@@ -77,6 +131,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Haskell Stack.Unnamed" />
+      <item itemvalue="Haskell Stack.Unnamed (1)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,6 +158,11 @@
       <workItem from="1672096633635" duration="11036000" />
       <workItem from="1672604430513" duration="416000" />
       <workItem from="1672941775231" duration="2932000" />
+      <workItem from="1674417631446" duration="1561000" />
+      <workItem from="1674583088224" duration="6450000" />
+      <workItem from="1674592623605" duration="2098000" />
+      <workItem from="1674659148267" duration="7943000" />
+      <workItem from="1674685268029" duration="17524000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on automata theory stuff">
       <created>1671851980342</created>

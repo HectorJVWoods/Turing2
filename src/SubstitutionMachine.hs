@@ -1,6 +1,5 @@
 module SubstitutionMachine(runSubstitutionMachine, substitutionMachineToMachine) where
 import Set
-import SymbolsAndMappings
 import Machine
 
 -- Very simple machine that for a given expression and set of mappings, apply all mappings to the expression and return the result.

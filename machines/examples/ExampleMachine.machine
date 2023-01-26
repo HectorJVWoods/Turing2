@@ -1,0 +1,11 @@
+ExampleMachine
+1         -> 2         : ExampleMachine : R # Comments are allowed here only
+# Or on their own line
+{[Empty]} -> {[Empty]} : ExampleMachine : S
+{[Else]}  -> {[Skip]}  : ExampleMachine : R
+# Whitespace is ignored
+
+
+
+
+# As are all of these empty lines ^^^

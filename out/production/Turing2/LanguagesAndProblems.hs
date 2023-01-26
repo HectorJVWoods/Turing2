@@ -1,9 +1,8 @@
-module LanguagesAndProblems where
+module LanguagesAndProblems(Language) where
 
 import Grammars
 import EitherOrBoth
 import Machine
-import Set
 -- Sorry this module is so long, I had to combine Languages and Problems into one file to avoid a circular dependency
 
 -- Languages are rather mysterious things; for some languages we know their exact structure, but for others we only know
@@ -40,7 +39,7 @@ import Set
 -- See Grammars.hs for more information on Grammars.
 type Generator = Grammar
 -- An acceptor is a machine that takes a set of symbols, and returns true if the set is a member of the language.
-type Acceptor = Machine -- TODO: maybe this should instead be a problem?
+type Acceptor = Machine
 type Language = EitherBothOrNeither Generator Acceptor
 -- I consider "abstract languages" to be languages with neither a generator nor an acceptor. I call them abstract
 -- since if we can neither generate nor check membership, then we are dealing with something we know/suspect might exist,
@@ -48,6 +47,12 @@ type Language = EitherBothOrNeither Generator Acceptor
 -- abstract languages might also be useful for users to define something to be implemented later, or to define a language
 -- that is not yet known to be decidable or not.
 
+
+
+-- Problems are incomplete; the stuff below is just a placeholder for now. Should NOT be used for production
+-- This should be written in turing, not haskell.
+
+{-
 isAbstractProblem :: Problem
 isAbstractProblem = error "Todo, we need a language over languages to define this"
 
@@ -58,13 +63,7 @@ languageIsAbstract (Both _ _) = False -- Has both a generator and an acceptor, s
 languageIsAbstract (Neither) = True -- Has neither a generator nor an acceptor, so abstract
 
 
-
-
--- Problems are incomplete; the stuff below is just a placeholder for now. Should NOT be used for production
-
-
-
-type ProblemResult = [Symbol]
+type ProblemResult = [Expression]
 -- A "problem" can be considered as a "question" that takes an input, and produces one of n outputs.
 -- It is possible for a problem to have an infinite number of outputs, as is the case with the problem of generating
 -- all members of a non-regular language. The definition used here however, will be for problems framed by the user,
@@ -134,3 +133,5 @@ abstractMembershipProblem = newAbstractDecisionProblem "Membership Problem"
 -- A 'solution' to a problem is a machine that the programmer claims solves the problem. Whether it does so is
 -- another matter, we will define another data type to test solutions later.
 data Solution = Solution Problem Machine
+
+-}

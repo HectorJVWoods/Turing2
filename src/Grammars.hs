@@ -1,6 +1,5 @@
 module Grammars(Grammar) where
 import Set
-import SymbolsAndMappings
 import Helpers
 
 
@@ -19,7 +18,7 @@ import Helpers
 -- An expression is evaluated through derivation until there are no more non-terminal symbols.
 data GrammarSymbol = Terminal Symbol | NonTerminal Symbol | Blank  deriving (Show, Eq)
 type ProductionRule = ([GrammarSymbol], [GrammarSymbol]) -- A production rule is a mapping from one grammar symbol to another
-type Grammar = (Set ProductionRule, Symbol, -- A grammar is a set of production rules
+type Grammar = (Set ProductionRule) -- A grammar is a set of production rules
 data GrammarType = ContextFree | ContextSensitive
                      | Regular | RecursivelyEnumerable | Uncomputable deriving (Show, Eq) -- A grammar type is a type of grammar, e.g context free, context sensitive, regular, unrestricted
 
@@ -28,6 +27,7 @@ symbolToGrammarSymbol :: Symbol -> Set Symbol -> Symbol -> GrammarSymbol
 symbolToGrammarSymbol s nonTerminals blankSymbol | s == blankSymbol       = Blank
                                                  | isInSet s nonTerminals = NonTerminal s
                                                  | otherwise              = Terminal s
+
 
 
 newGrammarFromSymbols :: Set Symbol -> Symbol -> Set ([Symbol], [Symbol]) -> Grammar
@@ -40,8 +40,7 @@ newGrammarFromSymbols nonTerminals blankSymbol = setMap toGrammarSymbols
 
 stringToGrammar :: String -> Grammar
 stringToGrammar s = newGrammarFromSymbols nonTerminals blankSymbol (setFromList (map toTuple (lines s)))
-    where (startSymbol, nonTerminals, blankSymbol) =
-          (firstLine, otherLines) = (head (lines s), tail (lines s))
+    where (startSymbol, nonTerminals, blankSymbol) = (firstLine, otherLines) = (head (lines s), tail (lines s))
 
 
 intGrammar :: Grammar

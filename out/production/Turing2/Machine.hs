@@ -1,19 +1,15 @@
-module Machine where
-import Grammars
+module Program where
 
--- The most basic definition of a machine is something which takes a bunch of symbols, and converts them into a bunch of other symbols.
-type Machine = ([Symbol] -> [Symbol])
--- How in fact a machine is implemented however is a more complex matter. There are more than likely an infinite number of
--- possible turing complete machines.
--- I don't see the point in reinventing the wheel though, so I'm just going to use haskell to interpret and run machines.
--- Eventually i plan on writing a lisp compiler as well since I think it's a bit closer to what I am trying to do
--- than haskell, but I'm not familiar with it yet so I'll stick with haskell for the time being.
+-- A program is just a combination of machines
+-- i.e, machines are able to transition to other machines, but it is not possible
+-- to run a machine, wait for it to halt, and then run another machine.
+-- that is the job of a machine.
 
+-- Machine files are what the user will write, machines are written as code blocks
+-- The compiler turns machine files into two different files: one is machine files, one file for each machine.
+-- The other is a program-flow file, which is a file that contains the flow of the program.
+-- i.e the list of machines that the program will run in order.
 
-
--- Subset machines
--- A subset machine is a machine which takes an expression of a given language, and returns another expression of
--- the same language. I call it a "subset machine" because the machine is not capable of producing expressions
--- that do not already exist in the original language. Subset machines es
--- For example, if we consider the language of integers, we could implement the (<) operator as a subset machine.
--- Such a machine takes a member of the integer language, and returns a 
+-- The advantage of this approach is that if two programmers happen to define identical machines,
+-- they will correspond to a single machine file.
+-- likewise, if a machine has the same flow as another machine, the flow file will be identical.

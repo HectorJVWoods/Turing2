@@ -1,0 +1,10 @@
+and2
+# This machine takes expressions exactly of the form "A<Separator>B", where A and B are booleans ('0' or '1').
+# And returns a single boolean either '0' or '1' depending on the result of the AND operation.
+# i.e this is a 2-tape AND gate!
+
+
+1             -> {[Empty]} : and2 : R
+{[Separator]} -> {[Empty]} : and2 : R
+{[0]}         -> {[X]}     : and2 : R
+{[Empty]}     -> {[Empty]} : and2 : L

@@ -1,0 +1,4 @@
+1sWith2s
+1         -> 2         : 1sWith2s : R
+{[Empty]} -> {[Empty]} : 1sWith2s : S
+{[Else]}  -> {[Skip]}  : 1sWith2s : R
